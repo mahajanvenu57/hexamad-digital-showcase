@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import hexamadLogo from "@/assets/hexamad-logo.jpeg";
+import hexamadLogo from "@/assets/hexamad-logo-new.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
