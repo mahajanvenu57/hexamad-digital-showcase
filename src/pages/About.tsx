@@ -1,0 +1,225 @@
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { Award, Users, Target, Zap, Shield, Lightbulb } from "lucide-react";
+
+const About = () => {
+  const founder = {
+    name: "Alex Johnson",
+    title: "Founder & CEO",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    bio: "With over 12 years of experience in digital marketing, Alex founded Hexamad Digital with a vision to transform how businesses connect with their audiences online. His expertise spans across SEO, social media strategy, and conversion optimization.",
+    expertise: [
+      { skill: "SEO Strategy", level: 95 },
+      { skill: "PPC Management", level: 88 },
+      { skill: "Social Media", level: 92 },
+      { skill: "Analytics", level: 90 },
+      { skill: "Conversion Optimization", level: 87 }
+    ]
+  };
+
+  const team = [
+    {
+      name: "Sarah Chen",
+      role: "Head of SEO",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612a786?w=400&h=400&fit=crop&crop=face",
+      description: "SEO specialist with 8+ years driving organic growth for Fortune 500 companies."
+    },
+    {
+      name: "Michael Rodriguez",
+      role: "Creative Director",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      description: "Award-winning creative director specializing in brand storytelling and visual campaigns."
+    },
+    {
+      name: "Emily Watson",
+      role: "PPC Strategist",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      description: "Data-driven PPC expert managing $2M+ in annual ad spend with exceptional ROI."
+    }
+  ];
+
+  const values = [
+    {
+      icon: Target,
+      title: "Results-Driven",
+      description: "We focus on measurable outcomes that directly impact your business growth and success."
+    },
+    {
+      icon: Zap,
+      title: "Innovation First",
+      description: "Staying ahead of digital trends to provide cutting-edge solutions for our clients."
+    },
+    {
+      icon: Shield,
+      title: "Transparency",
+      description: "Complete transparency in our processes, reporting, and communication with every client."
+    },
+    {
+      icon: Users,
+      title: "Client Partnership",
+      description: "We work as an extension of your team, understanding your business inside and out."
+    },
+    {
+      icon: Award,
+      title: "Excellence",
+      description: "Committed to delivering exceptional quality in every project we undertake."
+    },
+    {
+      icon: Lightbulb,
+      title: "Strategic Thinking",
+      description: "Data-informed strategies that align with your long-term business objectives."
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      
+      <main className="container mx-auto px-4 py-16">
+        {/* Header */}
+        <div className="text-center mb-20 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
+            About <span className="text-gradient">Hexamad Digital</span>
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            We're a team of passionate digital marketing professionals dedicated to 
+            transforming businesses through innovative strategies and measurable results.
+          </p>
+        </div>
+
+        {/* Founder Section */}
+        <section className="mb-20 animate-fade-in-up">
+          <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-border">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Founder Image */}
+              <div className="text-center lg:text-left">
+                <img
+                  src={founder.image}
+                  alt={founder.name}
+                  className="w-64 h-64 rounded-2xl object-cover mx-auto lg:mx-0 shadow-elegant glow-primary"
+                />
+                <h2 className="text-3xl font-display font-bold mt-6 mb-2">{founder.name}</h2>
+                <p className="text-primary font-medium text-lg">{founder.title}</p>
+              </div>
+
+              {/* Founder Bio & Expertise */}
+              <div>
+                <p className="text-muted-foreground mb-8 leading-relaxed">
+                  {founder.bio}
+                </p>
+
+                {/* Expertise Chart */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-display font-semibold mb-4">Core Expertise</h3>
+                  {founder.expertise.map((item, index) => (
+                    <div key={index} className="space-y-2">
+                      <div className="flex justify-between">
+                        <span className="font-medium">{item.skill}</span>
+                        <span className="text-primary">{item.level}%</span>
+                      </div>
+                      <div className="w-full bg-muted rounded-full h-2">
+                        <div
+                          className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
+                          style={{ width: `${item.level}%` }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Team Section */}
+        <section className="mb-20 animate-fade-in-up">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-display font-bold mb-4">
+              Meet Our <span className="text-gradient">Expert Team</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Our diverse team of specialists brings together decades of experience 
+              in digital marketing, creative design, and strategic planning.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {team.map((member, index) => (
+              <div
+                key={index}
+                className="service-card text-center"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-32 h-32 rounded-2xl object-cover mx-auto mb-6 shadow-elegant"
+                />
+                <h3 className="text-xl font-display font-semibold mb-2">{member.name}</h3>
+                <p className="text-primary font-medium mb-4">{member.role}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {member.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section className="mb-20 animate-fade-in-up">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-display font-bold mb-4">
+              Why Choose <span className="text-gradient">Hexamad Digital</span>?
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Our core values and approach set us apart in the digital marketing landscape.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <div
+                key={index}
+                className="service-card text-center"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex justify-center mb-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center glow-primary">
+                    <value.icon size={32} className="text-primary-foreground" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-display font-semibold mb-4">{value.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <div className="text-center bg-gradient-card p-12 rounded-2xl border border-border animate-fade-in">
+          <h2 className="text-3xl font-display font-bold mb-4">
+            Ready to Work With <span className="text-gradient">Industry Experts</span>?
+          </h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Let's discuss how our experienced team can help transform your digital presence 
+            and drive meaningful business growth.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="btn-primary">
+              Schedule Consultation
+            </button>
+            <button className="btn-secondary">
+              View Our Work
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default About;
