@@ -4,10 +4,10 @@ import { Award, Users, Target, Zap, Shield, Lightbulb } from "lucide-react";
 
 const About = () => {
   const founder = {
-    name: "Rahul Sharma",
+    name: "Mr. Himanshu Dhande",
     title: "Co-Founder & CEO",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-    bio: "With over 10 years of experience in digital marketing, Rahul co-founded Hexamad Digital with a vision to transform how businesses connect with their audiences online. His expertise spans across SEO, social media strategy, and conversion optimization.",
+    bio: "With over 10 years of experience in digital marketing, Himanshu co-founded Hexamad Digital with a vision to transform how businesses connect with their audiences online. His expertise spans across SEO, social media strategy, and conversion optimization.",
     expertise: [
       { skill: "SEO Strategy", level: 95 },
       { skill: "PPC Management", level: 88 },
@@ -18,10 +18,10 @@ const About = () => {
   };
 
   const coFounder = {
-    name: "Priya Patel",
+    name: "Mr. Monu Shetty",
     title: "Co-Founder & CMO",
     image: "https://images.unsplash.com/photo-1494790108755-2616b612a786?w=400&h=400&fit=crop&crop=face",
-    bio: "Priya brings 8+ years of creative and strategic marketing experience to Hexamad Digital. She specializes in brand development, content marketing, and client relationship management, ensuring every campaign delivers exceptional results.",
+    bio: "Monu brings 8+ years of creative and strategic marketing experience to Hexamad Digital. He specializes in brand development, content marketing, and client relationship management, ensuring every campaign delivers exceptional results.",
     expertise: [
       { skill: "Brand Strategy", level: 93 },
       { skill: "Content Marketing", level: 96 },

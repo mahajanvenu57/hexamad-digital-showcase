@@ -259,14 +259,14 @@ const Contact = () => {
             {/* Google Maps Embed */}
             <div className="rounded-2xl overflow-hidden shadow-elegant">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.473896074851!2d72.79886331491486!3d19.424816486911753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9f6d2e1234b%3A0x5678f9e1234a6789!2sPoonam%20Palace%2C%20Lakshmiben%20Chedda%20Rd%2C%20Nalasopara%20West%2C%20Nala%20Sopara%2C%20Maharashtra%20401203!5e0!3m2!1sen!2sin!4v1647234567890!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dOWTgaQzuU17R8&q=Poonam+Palace+B-301+near+Star+Hospital+Lakshmiben+Chedda+Road+Nalasopara+West+Nala+Sopara+Maharashtra+401203&zoom=15"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Hexamad Digital Location - Poonam Palace, Nalasopara West"
+                title="Hexamad Digital Location - Poonam Palace, B-301, near Star Hospital, Nalasopara West"
               />
             </div>
           </div>
