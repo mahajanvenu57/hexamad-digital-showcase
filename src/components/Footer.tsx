@@ -68,15 +68,19 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Mail size={16} />
-                <span>info@hexamaddigital.com</span>
+                <span>contact@hexamad.in</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Phone size={16} />
-                <span>+1 (555) 123-4567</span>
+                <span>+91-8087507773</span>
+              </div>
+              <div className="flex items-center space-x-2 text-muted-foreground">
+                <Phone size={16} />
+                <span>+91-7709476192</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <MapPin size={16} />
-                <span>123 Digital Street, Tech City, TC 12345</span>
+                <span>Poonam Palace, B-301, near Star Hospital, Lakshmiben Chedda Road, Nalasopara West, Nala Sopara, Maharashtra 401203</span>
               </div>
             </div>
           </div>

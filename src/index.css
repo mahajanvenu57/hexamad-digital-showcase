@@ -155,8 +155,9 @@ Extracted from the vibrant Hexamad Digital logo with neon cyan, purple, and gold
 
   /* Button Variants for Hexamad Brand */
   .btn-primary {
-    @apply relative overflow-hidden rounded-xl bg-primary px-8 py-4 font-semibold text-primary-foreground transition-all duration-300;
+    @apply relative overflow-hidden rounded-xl bg-primary px-8 py-4 font-semibold text-primary-foreground transition-all duration-300 flex items-center justify-center gap-2;
     box-shadow: var(--shadow-primary);
+    min-width: 200px;
   }
 
   .btn-primary:hover {
@@ -165,7 +166,8 @@ Extracted from the vibrant Hexamad Digital logo with neon cyan, purple, and gold
   }
 
   .btn-secondary {
-    @apply relative overflow-hidden rounded-xl bg-transparent border-2 border-primary px-8 py-4 font-semibold text-primary transition-all duration-300;
+    @apply relative overflow-hidden rounded-xl bg-transparent border-2 border-primary px-8 py-4 font-semibold text-primary transition-all duration-300 flex items-center justify-center gap-2;
+    min-width: 200px;
   }
 
   .btn-secondary:hover {
@@ -174,9 +176,10 @@ Extracted from the vibrant Hexamad Digital logo with neon cyan, purple, and gold
   }
 
   .btn-accent {
-    @apply relative overflow-hidden rounded-xl px-8 py-4 font-semibold text-accent-foreground transition-all duration-300;
+    @apply relative overflow-hidden rounded-xl px-8 py-4 font-semibold text-accent-foreground transition-all duration-300 flex items-center justify-center gap-2;
     background: var(--gradient-accent);
     box-shadow: var(--shadow-gold);
+    min-width: 200px;
   }
 
   .btn-accent:hover {

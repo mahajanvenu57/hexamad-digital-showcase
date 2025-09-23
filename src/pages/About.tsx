@@ -4,16 +4,30 @@ import { Award, Users, Target, Zap, Shield, Lightbulb } from "lucide-react";
 
 const About = () => {
   const founder = {
-    name: "Alex Johnson",
-    title: "Founder & CEO",
+    name: "Rahul Sharma",
+    title: "Co-Founder & CEO",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-    bio: "With over 12 years of experience in digital marketing, Alex founded Hexamad Digital with a vision to transform how businesses connect with their audiences online. His expertise spans across SEO, social media strategy, and conversion optimization.",
+    bio: "With over 10 years of experience in digital marketing, Rahul co-founded Hexamad Digital with a vision to transform how businesses connect with their audiences online. His expertise spans across SEO, social media strategy, and conversion optimization.",
     expertise: [
       { skill: "SEO Strategy", level: 95 },
       { skill: "PPC Management", level: 88 },
       { skill: "Social Media", level: 92 },
       { skill: "Analytics", level: 90 },
       { skill: "Conversion Optimization", level: 87 }
+    ]
+  };
+
+  const coFounder = {
+    name: "Priya Patel",
+    title: "Co-Founder & CMO",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612a786?w=400&h=400&fit=crop&crop=face",
+    bio: "Priya brings 8+ years of creative and strategic marketing experience to Hexamad Digital. She specializes in brand development, content marketing, and client relationship management, ensuring every campaign delivers exceptional results.",
+    expertise: [
+      { skill: "Brand Strategy", level: 93 },
+      { skill: "Content Marketing", level: 96 },
+      { skill: "Client Relations", level: 94 },
+      { skill: "Creative Direction", level: 89 },
+      { skill: "Market Research", level: 91 }
     ]
   };
 
@@ -87,9 +101,19 @@ const About = () => {
           </p>
         </div>
 
-        {/* Founder Section */}
+        {/* Co-Founders Section */}
         <section className="mb-20 animate-fade-in-up">
-          <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-border">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-display font-bold mb-4">
+              Meet Our <span className="text-gradient">Co-Founders</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              The visionary leaders behind Hexamad Digital's success story.
+            </p>
+          </div>
+          
+          {/* First Co-Founder */}
+          <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-border mb-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Founder Image */}
               <div className="text-center lg:text-left">
@@ -98,7 +122,7 @@ const About = () => {
                   alt={founder.name}
                   className="w-64 h-64 rounded-2xl object-cover mx-auto lg:mx-0 shadow-elegant glow-primary"
                 />
-                <h2 className="text-3xl font-display font-bold mt-6 mb-2">{founder.name}</h2>
+                <h3 className="text-3xl font-display font-bold mt-6 mb-2">{founder.name}</h3>
                 <p className="text-primary font-medium text-lg">{founder.title}</p>
               </div>
 
@@ -110,22 +134,70 @@ const About = () => {
 
                 {/* Expertise Chart */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-display font-semibold mb-4">Core Expertise</h3>
+                  <h4 className="text-xl font-display font-semibold mb-4">Core Expertise</h4>
                   {founder.expertise.map((item, index) => (
                     <div key={index} className="space-y-2">
                       <div className="flex justify-between">
-                        <span className="font-medium">{item.skill}</span>
-                        <span className="text-primary">{item.level}%</span>
+                        <span className="text-sm font-medium">{item.skill}</span>
+                        <span className="text-sm text-muted-foreground">{item.level}%</span>
                       </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div
-                          className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${item.level}%` }}
+                      <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                        <div 
+                          className="h-2 bg-gradient-primary rounded-full transition-all duration-1000 ease-out"
+                          style={{ 
+                            width: `${item.level}%`,
+                            animationDelay: `${index * 0.1}s` 
+                          }}
                         />
                       </div>
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Second Co-Founder */}
+          <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-border">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Bio & Expertise (Left on desktop) */}
+              <div className="order-2 lg:order-1">
+                <p className="text-muted-foreground mb-8 leading-relaxed">
+                  {coFounder.bio}
+                </p>
+
+                {/* Expertise Chart */}
+                <div className="space-y-4">
+                  <h4 className="text-xl font-display font-semibold mb-4">Core Expertise</h4>
+                  {coFounder.expertise.map((item, index) => (
+                    <div key={index} className="space-y-2">
+                      <div className="flex justify-between">
+                        <span className="text-sm font-medium">{item.skill}</span>
+                        <span className="text-sm text-muted-foreground">{item.level}%</span>
+                      </div>
+                      <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                        <div 
+                          className="h-2 bg-gradient-primary rounded-full transition-all duration-1000 ease-out"
+                          style={{ 
+                            width: `${item.level}%`,
+                            animationDelay: `${index * 0.1}s` 
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Founder Image (Right on desktop) */}
+              <div className="order-1 lg:order-2 text-center lg:text-right">
+                <img
+                  src={coFounder.image}
+                  alt={coFounder.name}
+                  className="w-64 h-64 rounded-2xl object-cover mx-auto lg:mx-0 shadow-elegant glow-primary"
+                />
+                <h3 className="text-3xl font-display font-bold mt-6 mb-2">{coFounder.name}</h3>
+                <p className="text-primary font-medium text-lg">{coFounder.title}</p>
               </div>
             </div>
           </div>

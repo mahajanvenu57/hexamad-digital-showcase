@@ -49,25 +49,31 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      value: "info@hexamaddigital.com",
+      value: "contact@hexamad.in",
       description: "Send us an email anytime"
     },
     {
       icon: Phone,
       title: "Call Us",
-      value: "+1 (555) 123-4567",
-      description: "Mon-Fri from 8am to 5pm"
+      value: "+91-8087507773",
+      description: "Mon-Fri from 9am to 6pm"
+    },
+    {
+      icon: Phone,
+      title: "Alternative Number",
+      value: "+91-7709476192",
+      description: "For urgent inquiries"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      value: "123 Digital Street, Tech City, TC 12345",
+      value: "Poonam Palace, B-301, near Star Hospital, Lakshmiben Chedda Road, Nalasopara West, Nala Sopara, Maharashtra 401203",
       description: "Our headquarters"
     },
     {
       icon: Clock,
       title: "Business Hours",
-      value: "Mon - Fri: 8:00 AM - 5:00 PM",
+      value: "Mon - Fri: 9:00 AM - 6:00 PM",
       description: "Ready to help you succeed"
     }
   ];
@@ -253,14 +259,14 @@ const Contact = () => {
             {/* Google Maps Embed */}
             <div className="rounded-2xl overflow-hidden shadow-elegant">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2175165949907!2d-73.98656668459418!3d40.75895697932685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1647234567890!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.473896074851!2d72.79886331491486!3d19.424816486911753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9f6d2e1234b%3A0x5678f9e1234a6789!2sPoonam%20Palace%2C%20Lakshmiben%20Chedda%20Rd%2C%20Nalasopara%20West%2C%20Nala%20Sopara%2C%20Maharashtra%20401203!5e0!3m2!1sen!2sin!4v1647234567890!5m2!1sen!2sin"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Hexamad Digital Location"
+                title="Hexamad Digital Location - Poonam Palace, Nalasopara West"
               />
             </div>
           </div>
