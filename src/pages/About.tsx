@@ -20,7 +20,7 @@ const About = () => {
   const coFounder = {
     name: "Mr. Monu Shetty",
     title: "Co-Founder & CMO",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612a786?w=400&h=400&fit=crop&crop=face",
+    image: "/src/assets/monu-shetty.jpeg",
     bio: "Monu brings 8+ years of creative and strategic marketing experience to Hexamad Digital. He specializes in brand development, content marketing, and client relationship management, ensuring every campaign delivers exceptional results.",
     expertise: [
       { skill: "Brand Strategy", level: 93 },
