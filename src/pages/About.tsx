@@ -120,7 +120,7 @@ const About = () => {
                 <img
                   src={founder.image}
                   alt={founder.name}
-                  className="w-64 h-64 rounded-2xl object-cover mx-auto lg:mx-0 shadow-elegant glow-primary"
+                  className="w-64 h-80 rounded-2xl object-cover mx-auto lg:mx-0 shadow-elegant glow-primary"
                 />
                 <h3 className="text-3xl font-display font-bold mt-6 mb-2">{founder.name}</h3>
                 <p className="text-primary font-medium text-lg">{founder.title}</p>
@@ -194,7 +194,7 @@ const About = () => {
                 <img
                   src={coFounder.image}
                   alt={coFounder.name}
-                  className="w-64 h-64 rounded-2xl object-cover mx-auto lg:mx-0 shadow-elegant glow-primary"
+                  className="w-64 h-80 rounded-2xl object-cover mx-auto lg:ml-auto lg:mr-0 shadow-elegant glow-primary"
                 />
                 <h3 className="text-3xl font-display font-bold mt-6 mb-2">{coFounder.name}</h3>
                 <p className="text-primary font-medium text-lg">{coFounder.title}</p>
