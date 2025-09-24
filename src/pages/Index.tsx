@@ -15,6 +15,14 @@ import imageClinic from "@/assets/image-clinic.jpeg";
 import gtaHomeMakers from "@/assets/gta-homemakers.jpeg";
 import gktLogo from "@/assets/gkt-logo.jpeg";
 import sagGallery from "@/assets/sag-gallery.jpeg";
+import zprimeLogo from "@/assets/zprime-logo.jpeg";
+import saajByGargee from "@/assets/saaj-by-gargee.jpeg";
+import ushaEducationalTrust from "@/assets/usha-educational-trust.jpeg";
+import roboticsPro from "@/assets/robotics-pro.jpeg";
+import saralClasses from "@/assets/saral-classes.jpeg";
+import aajachyaGoshti from "@/assets/aajachya-goshti.jpeg";
+import fitnessGadh from "@/assets/fitness-gadh.jpeg";
+import saiLeelaCaterers from "@/assets/sai-leela-caterers.jpeg";
 
 const Index = () => {
   const [currentStat, setCurrentStat] = useState({ projects: 0, clients: 0, rating: 0 });
@@ -38,7 +46,15 @@ const Index = () => {
     { name: "Image Liver & Gastro Clinic", logo: imageClinic },
     { name: "GTA HomeMakers", logo: gtaHomeMakers },
     { name: "GKT", logo: gktLogo },
-    { name: "Shikha Art Gallery", logo: sagGallery }
+    { name: "Shikha Art Gallery", logo: sagGallery },
+    { name: "ZPrime", logo: zprimeLogo },
+    { name: "Saaj By Gargee", logo: saajByGargee },
+    { name: "Usha Educational Trust", logo: ushaEducationalTrust },
+    { name: "Robotics Pro", logo: roboticsPro },
+    { name: "Saral Classes", logo: saralClasses },
+    { name: "Aajachya Goshti", logo: aajachyaGoshti },
+    { name: "Fitness Gadh", logo: fitnessGadh },
+    { name: "Sai Leela Caterers", logo: saiLeelaCaterers }
   ];
 
   // Client projects
@@ -217,13 +233,13 @@ const Index = () => {
               Trusted by Leading Companies Worldwide
             </h2>
             <div className="relative overflow-hidden">
-              <div className="logo-scroll flex items-center space-x-16 animate-fade-in">
-                {[...clientLogos, ...clientLogos].map((client, index) => (
-                  <div key={index} className="flex-shrink-0 w-24 h-16 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+              <div className="logo-scroll-infinite flex items-center gap-16">
+                {[...clientLogos, ...clientLogos, ...clientLogos].map((client, index) => (
+                  <div key={index} className="flex-shrink-0 w-32 h-20 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
                     <img
                       src={client.logo}
                       alt={client.name}
-                      className="max-w-full max-h-full object-contain filter invert"
+                      className="max-w-full max-h-full object-contain"
                     />
                   </div>
                 ))}

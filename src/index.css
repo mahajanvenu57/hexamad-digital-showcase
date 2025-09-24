@@ -132,6 +132,16 @@ Extracted from the vibrant Hexamad Digital logo with neon cyan, purple, and gold
   .logo-scroll:hover {
     animation-play-state: paused;
   }
+  
+  /* Infinite Logo Carousel */
+  .logo-scroll-infinite {
+    animation: infiniteScroll 40s linear infinite;
+    width: calc(200%);
+  }
+
+  .logo-scroll-infinite:hover {
+    animation-play-state: paused;
+  }
 
   /* Stats Counter Animation */
   .stats-card {
@@ -251,6 +261,15 @@ Extracted from the vibrant Hexamad Digital logo with neon cyan, purple, and gold
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
