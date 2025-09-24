@@ -112,7 +112,7 @@ Extracted from the vibrant Hexamad Digital logo with neon cyan, purple, and gold
     content: '';
     background: var(--gradient-primary);
     background-size: 200% 200%;
-    animation: gradientShift 8s ease infinite;
+    animation: gradientShift 6s ease infinite;
   }
 
   .service-card:hover::before {
