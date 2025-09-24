@@ -4,6 +4,18 @@ import { useState, useEffect } from "react";
 import { ArrowRight, Play, Users, Award, TrendingUp, Star, Search, Share2, MousePointer, Code, PenTool, BarChart3, CheckCircle, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Client logos
+import uumaBanquetHall from "@/assets/uuma-banquet-hall.jpeg";
+import kampMattresses from "@/assets/kamp-mattresses.jpeg";
+import balajiFoundation from "@/assets/balaji-foundation.jpeg";
+import truegems from "@/assets/truegems.jpeg";
+import venkateshwaraProperties from "@/assets/venkateshwara-properties.jpeg";
+import waLogo from "@/assets/wa-logo.jpeg";
+import imageClinic from "@/assets/image-clinic.jpeg";
+import gtaHomeMakers from "@/assets/gta-homemakers.jpeg";
+import gktLogo from "@/assets/gkt-logo.jpeg";
+import sagGallery from "@/assets/sag-gallery.jpeg";
+
 const Index = () => {
   const [currentStat, setCurrentStat] = useState({ projects: 0, clients: 0, rating: 0 });
 
@@ -17,14 +29,16 @@ const Index = () => {
 
   // Client logos for carousel
   const clientLogos = [
-    { name: "Apple", logo: "https://cdn.worldvectorlogo.com/logos/apple-14.svg" },
-    { name: "Google", logo: "https://cdn.worldvectorlogo.com/logos/google-1-1.svg" },
-    { name: "Microsoft", logo: "https://cdn.worldvectorlogo.com/logos/microsoft-5.svg" },
-    { name: "Nike", logo: "https://cdn.worldvectorlogo.com/logos/nike-4.svg" },
-    { name: "Amazon", logo: "https://cdn.worldvectorlogo.com/logos/amazon-icon-1.svg" },
-    { name: "Meta", logo: "https://cdn.worldvectorlogo.com/logos/meta-1.svg" },
-    { name: "Tesla", logo: "https://cdn.worldvectorlogo.com/logos/tesla-9.svg" },
-    { name: "Netflix", logo: "https://cdn.worldvectorlogo.com/logos/netflix-3.svg" }
+    { name: "UUMA Banquet Hall", logo: uumaBanquetHall },
+    { name: "Kamp Mattresses Pvt. Ltd.", logo: kampMattresses },
+    { name: "Balaji Foundation", logo: balajiFoundation },
+    { name: "Truegems", logo: truegems },
+    { name: "Venkateshwara Properties", logo: venkateshwaraProperties },
+    { name: "WA", logo: waLogo },
+    { name: "Image Liver & Gastro Clinic", logo: imageClinic },
+    { name: "GTA HomeMakers", logo: gtaHomeMakers },
+    { name: "GKT", logo: gktLogo },
+    { name: "Shikha Art Gallery", logo: sagGallery }
   ];
 
   // Client projects
