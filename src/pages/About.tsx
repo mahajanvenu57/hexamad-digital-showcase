@@ -6,7 +6,7 @@ const About = () => {
   const founder = {
     name: "Mr. Himanshu Dhande",
     title: "Co-Founder & CEO",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    image: "/src/assets/himanshu-dhande.jpeg",
     bio: "With over 10 years of experience in digital marketing, Himanshu co-founded Hexamad Digital with a vision to transform how businesses connect with their audiences online. His expertise spans across SEO, social media strategy, and conversion optimization.",
     expertise: [
       { skill: "SEO Strategy", level: 95 },
