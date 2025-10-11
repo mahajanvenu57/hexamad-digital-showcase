@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { Filter, Play, Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -16,7 +17,8 @@ const Portfolio = () => {
       description: "Increased organic traffic by 300% for leading fashion brand",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
       duration: "3 months",
-      results: "300% traffic increase"
+      results: "300% traffic increase",
+      slug: "e-commerce-seo"
     },
     {
       id: 2,
@@ -25,7 +27,8 @@ const Portfolio = () => {
       description: "Viral campaign generating 2M+ impressions",
       image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&h=400&fit=crop",
       duration: "2 months",
-      results: "2M+ impressions"
+      results: "2M+ impressions",
+      slug: "social-media-campaign"
     },
     {
       id: 3,
@@ -34,7 +37,8 @@ const Portfolio = () => {
       description: "Achieved 400% ROI improvement for B2B client",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
       duration: "4 months",
-      results: "400% ROI increase"
+      results: "400% ROI increase",
+      slug: "ppc-roi"
     },
     {
       id: 4,
@@ -43,7 +47,8 @@ const Portfolio = () => {
       description: "Responsive website with 50% faster loading",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
       duration: "6 weeks",
-      results: "50% faster loading"
+      results: "50% faster loading",
+      slug: "modern-web-development"
     },
     {
       id: 5,
@@ -52,7 +57,8 @@ const Portfolio = () => {
       description: "Content plan that doubled engagement rates",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
       duration: "3 months",
-      results: "2x engagement"
+      results: "2x engagement",
+      slug: "content-strategy"
     },
     {
       id: 6,
@@ -61,7 +67,8 @@ const Portfolio = () => {
       description: "Restaurant chain ranked #1 in local searches",
       image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
       duration: "5 months",
-      results: "#1 local ranking"
+      results: "#1 local ranking",
+      slug: "local-seo"
     }
   ];
 
@@ -146,10 +153,13 @@ const Portfolio = () => {
                   {project.description}
                 </p>
                 
-                <button className="flex items-center text-primary hover:text-primary-glow transition-colors font-medium">
+                <Link 
+                  to={`/portfolio/${project.slug}`}
+                  className="flex items-center text-primary hover:text-primary-glow transition-colors font-medium"
+                >
                   View Case Study
                   <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
-                </button>
+                </Link>
               </div>
             </div>
           ))}
