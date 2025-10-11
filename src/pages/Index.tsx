@@ -6,6 +6,13 @@ import { Link } from "react-router-dom";
 
 // Client logos
 import uumaBanquetHall from "@/assets/uuma-banquet-hall.jpeg";
+
+// Client photos
+import client1 from "@/assets/client-1.png";
+import client2 from "@/assets/client-2.png";
+import client3 from "@/assets/client-3.png";
+import client4 from "@/assets/client-4.png";
+import client5 from "@/assets/client-5.jpeg";
 import kampMattresses from "@/assets/kamp-mattresses.jpeg";
 import balajiFoundation from "@/assets/balaji-foundation.jpeg";
 import truegems from "@/assets/truegems.jpeg";
@@ -61,39 +68,33 @@ const Index = () => {
   const clientProjects = [
     {
       id: 1,
-      name: "TechStart Inc",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop",
-      category: "B2B SaaS"
+      name: "Content Creator",
+      image: client1,
+      category: "Digital Marketing"
     },
     {
       id: 2,
-      name: "Fashion Forward",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop",
-      category: "E-commerce"
+      name: "Business Executive",
+      image: client2,
+      category: "Brand Strategy"
     },
     {
       id: 3,
-      name: "GreenEco Solutions",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop",
-      category: "Sustainability"
+      name: "Social Media Influencer",
+      image: client3,
+      category: "Social Media Marketing"
     },
     {
       id: 4,
-      name: "HealthPlus Clinic",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop",
-      category: "Healthcare"
+      name: "Fashion Entrepreneur",
+      image: client4,
+      category: "E-commerce"
     },
     {
       id: 5,
-      name: "FoodieDelight",
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
-      category: "Restaurant"
-    },
-    {
-      id: 6,
-      name: "FinanceHub",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
-      category: "Financial Services"
+      name: "Lifestyle Brand",
+      image: client5,
+      category: "Content Creation"
     }
   ];
 
@@ -260,18 +261,18 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up">
+            <div className="flex flex-wrap justify-center items-center gap-8 animate-fade-in-up max-w-5xl mx-auto">
               {clientProjects.map((project, index) => (
                 <div
                   key={project.id}
-                  className="project-card group cursor-pointer"
+                  className="project-card group cursor-pointer flex-shrink-0"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="relative overflow-hidden rounded-xl">
+                  <div className="relative overflow-hidden rounded-xl w-64 h-80">
                     <img
                       src={project.image}
                       alt={project.name}
-                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-4 left-4 right-4 text-white">
