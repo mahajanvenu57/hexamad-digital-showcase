@@ -1,6 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Award, Users, Target, Zap, Shield, Lightbulb } from "lucide-react";
+import monuShetty from "@/assets/monu-shetty.jpeg";
+import tousifShaikh from "@/assets/tousif-shaikh.png";
 
 const About = () => {
   const founder = {
@@ -17,35 +19,19 @@ const About = () => {
     ]
   };
 
-  const coFounder = {
-    name: "Mr. Monu Shetty",
-    title: "CTO",
-    image: "/src/assets/monu-shetty.jpeg",
-    bio: "Monu brings 8+ years of technical and strategic experience to Hexamad Digital. He leads our technology initiatives, overseeing web development, marketing automation, and technical infrastructure to ensure seamless digital experiences.",
-    expertise: [
-      { skill: "Web Development", level: 95 },
-      { skill: "Marketing Automation", level: 92 },
-      { skill: "Technical Strategy", level: 90 },
-      { skill: "System Architecture", level: 88 },
-      { skill: "Project Management", level: 93 }
-    ]
-  };
-
-  const cmoAndCoo = {
-    name: "Mr. Tousif Shaikh (Ali)",
-    title: "CMO & COO",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-    bio: "Tousif brings extensive experience in marketing operations and business strategy to Hexamad Digital. He oversees daily operations while driving our marketing initiatives, ensuring operational excellence and strategic growth.",
-    expertise: [
-      { skill: "Marketing Strategy", level: 94 },
-      { skill: "Operations Management", level: 96 },
-      { skill: "Business Development", level: 91 },
-      { skill: "Team Leadership", level: 93 },
-      { skill: "Strategic Planning", level: 89 }
-    ]
-  };
-
   const team = [
+    {
+      name: "Mr. Monu Shetty",
+      role: "CTO",
+      image: monuShetty,
+      description: "Monu brings 8+ years of technical and strategic experience to Hexamad Digital. He leads our technology initiatives, overseeing web development, marketing automation, and technical infrastructure."
+    },
+    {
+      name: "Mr. Tousif Shaikh (Ali)",
+      role: "CMO & COO",
+      image: tousifShaikh,
+      description: "Tousif brings extensive experience in marketing operations and business strategy. He oversees daily operations while driving our marketing initiatives, ensuring operational excellence and strategic growth."
+    },
     {
       name: "Sarah Chen",
       role: "Head of SEO",
@@ -170,96 +156,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          
-          {/* Second Co-Founder */}
-          <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-border">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Bio & Expertise (Left on desktop) */}
-              <div className="order-2 lg:order-1">
-                <p className="text-muted-foreground mb-8 leading-relaxed">
-                  {coFounder.bio}
-                </p>
-
-                {/* Expertise Chart */}
-                <div className="space-y-4">
-                  <h4 className="text-xl font-display font-semibold mb-4">Core Expertise</h4>
-                  {coFounder.expertise.map((item, index) => (
-                    <div key={index} className="space-y-2">
-                      <div className="flex justify-between">
-                        <span className="text-sm font-medium">{item.skill}</span>
-                        <span className="text-sm text-muted-foreground">{item.level}%</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                        <div 
-                          className="h-2 bg-gradient-primary rounded-full transition-all duration-1000 ease-out"
-                          style={{ 
-                            width: `${item.level}%`,
-                            animationDelay: `${index * 0.1}s` 
-                          }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Founder Image (Right on desktop) */}
-              <div className="order-1 lg:order-2 text-center lg:text-right">
-                <img
-                  src={coFounder.image}
-                  alt={coFounder.name}
-                  className="w-64 h-80 rounded-2xl object-cover mx-auto lg:ml-auto lg:mr-0 shadow-elegant glow-primary"
-                />
-                <h3 className="text-3xl font-display font-bold mt-6 mb-2">{coFounder.name}</h3>
-                <p className="text-primary font-medium text-lg">{coFounder.title}</p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Third Leader */}
-          <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-border mt-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Leader Image */}
-              <div className="text-center lg:text-left">
-                <img
-                  src={cmoAndCoo.image}
-                  alt={cmoAndCoo.name}
-                  className="w-64 h-80 rounded-2xl object-cover mx-auto lg:mx-0 shadow-elegant glow-primary"
-                />
-                <h3 className="text-3xl font-display font-bold mt-6 mb-2">{cmoAndCoo.name}</h3>
-                <p className="text-primary font-medium text-lg">{cmoAndCoo.title}</p>
-              </div>
-
-              {/* Leader Bio & Expertise */}
-              <div>
-                <p className="text-muted-foreground mb-8 leading-relaxed">
-                  {cmoAndCoo.bio}
-                </p>
-
-                {/* Expertise Chart */}
-                <div className="space-y-4">
-                  <h4 className="text-xl font-display font-semibold mb-4">Core Expertise</h4>
-                  {cmoAndCoo.expertise.map((item, index) => (
-                    <div key={index} className="space-y-2">
-                      <div className="flex justify-between">
-                        <span className="text-sm font-medium">{item.skill}</span>
-                        <span className="text-sm text-muted-foreground">{item.level}%</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                        <div 
-                          className="h-2 bg-gradient-primary rounded-full transition-all duration-1000 ease-out"
-                          style={{ 
-                            width: `${item.level}%`,
-                            animationDelay: `${index * 0.1}s` 
-                          }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* Team Section */}
@@ -274,7 +170,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {team.map((member, index) => (
               <div
                 key={index}
