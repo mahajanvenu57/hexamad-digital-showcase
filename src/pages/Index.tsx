@@ -11,7 +11,7 @@ import uumaBanquetHall from "@/assets/uuma-banquet-hall.jpeg";
 import client1 from "@/assets/client-1.png";
 import client2 from "@/assets/client-2.png";
 import client3 from "@/assets/client-3.png";
-import client4 from "@/assets/client-4.png";
+import client4 from "@/assets/client-4-new.png";
 import client5 from "@/assets/client-5.jpeg";
 import kampMattresses from "@/assets/kamp-mattresses.jpeg";
 import balajiFoundation from "@/assets/balaji-foundation.jpeg";
