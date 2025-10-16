@@ -68,33 +68,33 @@ const Index = () => {
   const clientProjects = [
     {
       id: 1,
-      name: "Content Creator",
+      name: "Gargee Ganesh",
       image: client1,
-      category: "Digital Marketing"
+      
     },
     {
       id: 2,
-      name: "Business Executive",
+      name: "Sangeet Hemant Kumar",
       image: client2,
-      category: "Brand Strategy"
+     
     },
     {
       id: 3,
-      name: "Social Media Influencer",
+      name: "Jitu IG Coach",
       image: client3,
-      category: "Social Media Marketing"
+      
     },
     {
       id: 4,
-      name: "Fashion Entrepreneur",
+      name: "Namrata Gandhi",
       image: client4,
-      category: "E-commerce"
+      
     },
     {
       id: 5,
-      name: "Lifestyle Brand",
+      name: "Puja Banerjee",
       image: client5,
-      category: "Content Creation"
+     
     }
   ];
 
