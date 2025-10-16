@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import hexamadLogo from "@/assets/hexamad-logo.jpeg";
+import hexamadLogo from "@/assets/hexamad-logo-new.png";
 
 const Footer = () => {
   return (
