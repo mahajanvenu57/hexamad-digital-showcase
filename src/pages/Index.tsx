@@ -254,7 +254,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-in">
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Clients We've <span className="text-gradient">Transformed</span>
+                Clients We've <span className="text-gradient">Worked With</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Discover how we've helped businesses across various industries achieve remarkable growth
