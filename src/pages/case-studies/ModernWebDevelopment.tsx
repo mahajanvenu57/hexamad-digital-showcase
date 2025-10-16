@@ -34,11 +34,11 @@ const ModernWebDevelopment = () => {
         </div>
 
         {/* Featured Image */}
-        <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl animate-fade-in-up">
+        <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl animate-fade-in-up bg-card/50">
           <img 
             src={fitnessGadhImage} 
             alt="Fitness Gadh Website" 
-            className="w-full h-[500px] object-cover"
+            className="w-full h-[400px] object-contain"
           />
         </div>
 
