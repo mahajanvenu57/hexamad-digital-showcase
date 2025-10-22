@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowLeft, ExternalLink, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import saajImage from "@/assets/saaj-by-gargee.jpeg";
+import saajLogo from "@/assets/saaj-logo.png";
 
 const SocialMediaCampaign = () => {
   return (
@@ -33,11 +33,11 @@ const SocialMediaCampaign = () => {
         </div>
 
         {/* Hero Image */}
-        <div className="rounded-2xl overflow-hidden mb-16 animate-fade-in-up shadow-elegant">
+        <div className="rounded-2xl overflow-hidden mb-16 animate-fade-in-up shadow-elegant bg-[#1a3838] flex items-center justify-center p-12">
           <img 
-            src={saajImage}
-            alt="Saaj by Gargee"
-            className="w-full h-96 object-cover"
+            src={saajLogo}
+            alt="Saaj by Gargee Logo"
+            className="w-full max-w-md h-auto object-contain"
           />
         </div>
 
@@ -162,7 +162,7 @@ const SocialMediaCampaign = () => {
               <blockquote className="text-lg text-muted-foreground italic leading-relaxed">
                 "Hexamad Digital has transformed the way Saaj by Gargee connects with fashion enthusiasts online. Their strategic approach to web design, social media, and personal branding brought new energy to our digital presence and contributed greatly to our business growth."
               </blockquote>
-              <p className="mt-4 font-semibold">— Saaj by Gargee, Founder</p>
+              <p className="mt-4 font-semibold">— Gargee Ganesh, Founder</p>
             </section>
           </div>
 
