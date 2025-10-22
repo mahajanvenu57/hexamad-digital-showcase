@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowLeft, ExternalLink, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import fitnessGadhImage from "@/assets/fitness-gadh.jpeg";
+import fitnessGadhImage from "@/assets/fitness-gadh-logo.png";
 
 const ModernWebDevelopment = () => {
   return (
