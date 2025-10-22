@@ -9,6 +9,11 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ModernWebDevelopment from "./pages/case-studies/ModernWebDevelopment";
+import SocialMediaCampaign from "./pages/case-studies/SocialMediaCampaign";
+import EcommerceSeo from "./pages/case-studies/EcommerceSeo";
+import PpcRoi from "./pages/case-studies/PpcRoi";
+import ContentStrategy from "./pages/case-studies/ContentStrategy";
+import LocalSeo from "./pages/case-studies/LocalSeo";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +27,11 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/modern-web-development" element={<ModernWebDevelopment />} />
+          <Route path="/portfolio/social-media-campaign" element={<SocialMediaCampaign />} />
+          <Route path="/portfolio/e-commerce-seo" element={<EcommerceSeo />} />
+          <Route path="/portfolio/ppc-roi" element={<PpcRoi />} />
+          <Route path="/portfolio/content-strategy" element={<ContentStrategy />} />
+          <Route path="/portfolio/local-seo" element={<LocalSeo />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
