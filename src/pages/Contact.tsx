@@ -260,7 +260,7 @@ const Contact = () => {
             {/* Google Maps Embed */}
             <div className="rounded-2xl overflow-hidden shadow-elegant">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9344965548767!2d72.81061727498636!3d19.415235981860413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9004bb04f61%3A0x281e3ba5de838dcf!2sPoonam%20Palace!5e0!3m2!1sen!2sin!4v1761203567783!5m2!1sen!2sin"
+                src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9200753399896!2d72.80768667498643!3d19.415858981859987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x62d6be2784ab5a0b%3A0xed6d41a9fcccb7a2!2sHexamad%20Digital%20%7C%20Best%20Digital%20Marketing%20Agency%20in%20Vasai%20Virar!5e0!3m2!1sen!2sin!4v1761204225322!5m2!1sen!2sin"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
