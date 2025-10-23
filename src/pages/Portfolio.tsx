@@ -174,12 +174,12 @@ const Portfolio = () => {
             Join our portfolio of successful clients and transform your digital presence today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">
+            <Link to="/contact" className="btn-primary">
               Start Your Project
-            </button>
-            <button className="btn-secondary">
+            </Link>
+            <Link to="/contact" className="btn-secondary">
               Schedule Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </main>

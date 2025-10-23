@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Award, Users, Target, Zap, Shield, Lightbulb } from "lucide-react";
+import { Link } from "react-router-dom";
 import monuShetty from "@/assets/monu-shetty.jpeg";
 import tousifShaikh from "@/assets/tousif-shaikh.png";
 
@@ -234,12 +235,12 @@ const About = () => {
             and drive meaningful business growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">
+            <Link to="/contact" className="btn-primary">
               Schedule Consultation
-            </button>
-            <button className="btn-secondary">
+            </Link>
+            <Link to="/portfolio" className="btn-secondary">
               View Our Work
-            </button>
+            </Link>
           </div>
         </div>
       </main>
