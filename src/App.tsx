@@ -8,6 +8,8 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 import ModernWebDevelopment from "./pages/case-studies/ModernWebDevelopment";
 import SocialMediaCampaign from "./pages/case-studies/SocialMediaCampaign";
 import EcommerceSeo from "./pages/case-studies/EcommerceSeo";
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/portfolio/local-seo" element={<LocalSeo />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

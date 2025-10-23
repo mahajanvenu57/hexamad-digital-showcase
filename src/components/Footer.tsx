@@ -66,20 +66,20 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3 text-sm">
-              <div className="flex items-center space-x-2 text-muted-foreground">
+              <a href="mailto:contact@hexamad.in" className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors">
                 <Mail size={16} />
                 <span>contact@hexamad.in</span>
-              </div>
-              <div className="flex items-center space-x-2 text-muted-foreground">
+              </a>
+              <a href="tel:+918087507773" className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors">
                 <Phone size={16} />
                 <span>+91-8087507773</span>
-              </div>
-              <div className="flex items-center space-x-2 text-muted-foreground">
+              </a>
+              <a href="tel:+917709476192" className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors">
                 <Phone size={16} />
                 <span>+91-7709476192</span>
-              </div>
-              <div className="flex items-center space-x-2 text-muted-foreground">
-                <MapPin size={16} />
+              </a>
+              <div className="flex items-start space-x-2 text-muted-foreground">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
                 <span>Poonam Palace, B-301, near Star Hospital, Lakshmiben Chedda Road, Nalasopara West, Nala Sopara, Maharashtra 401203</span>
               </div>
             </div>
@@ -88,7 +88,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Hexamad Digital. All rights reserved. | Privacy Policy | Terms of Service
+            © 2024 Hexamad Digital. All rights reserved. | <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link> | <Link to="/terms-conditions" className="hover:text-primary transition-colors">Terms & Conditions</Link>
           </p>
         </div>
       </div>
